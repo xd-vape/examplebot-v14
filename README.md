@@ -9,9 +9,9 @@
 
 <p align="center">
     <a href="https://github.com/xd-vape/examplebot-v14"><img src="https://img.shields.io/github/forks/xd-vape/examplebot-v14?style=for-the-badge" alt="forks - examplebot-v14"></a>
-    <a href="https://nodejs.org/en/download"><img src="https://img.shields.io/badge/DiscordJS-v14-7289da?style=for-the-badge&logo=discord" alt="DiscordJS - v14"></a>
+    <a href="https://discord.js.org/"><img src="https://img.shields.io/badge/DiscordJS-v14-7289da?style=for-the-badge&logo=discord" alt="DiscordJS - v14"></a>
     <a href="https://nodejs.org/en/download"><img src="https://img.shields.io/badge/NodeJS-v18.15.x-6cc24a?style=for-the-badge&logo=nodedotjs" alt="NodeJS - v18.15.x"></a>
-    <a href="https://nodejs.org/en/download"><img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23fff" alt="Javascript"></a>
+    <a><img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23fff" alt="Javascript"></a>
 </p>
 
 # ToDo list
