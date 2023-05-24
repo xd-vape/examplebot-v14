@@ -16,8 +16,8 @@
 
 # ToDo list
 
-- [ ] Add Command Handler
-- [ ] Add first Command (like Ping)  
+- [X] Add Command Handler
+- [X] Add first Command (like Ping)  
 - [ ] Add Events (like guildMemberAdd, guildMemberRemove)
 
 > So these are the first things that still need to be done. As already written, this bot should be updated over time so that this is sometime a complete bot that you only have to download and set a few things!
