@@ -1,6 +1,5 @@
 <h1 align="center">
   <img alt="logo" src="https://uploads.vapee.dev/JolA8/wOfelEmE96.png/raw"><br/>
-  DiscordJS Bot
 </h1>
 
 <p align="center"><b>This bot is written in Javascript with the DiscordJS V14 framework!</b></p>
