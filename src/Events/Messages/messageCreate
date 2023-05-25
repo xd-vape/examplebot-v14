@@ -1,0 +1,55 @@
+const {
+  EmbedBuilder,
+  Message,
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
+} = require("discord.js");
+
+module.exports = {
+  name: "messageCreate",
+  /**
+   *
+   * @param {Message} message
+   * @returns
+   */
+  async execute(message) {
+    try {
+      if (message.channel.id === "1058828302690816001") {
+        if (message.author.bot) return;
+
+        const pollEmbed = new EmbedBuilder()
+          .setDescription("**Question**\n" + message.content)
+          .setImage("https://i.ibb.co/vxdBKFd/Untitled-1.gif")
+          .addFields([
+            { name: "Yes", value: "0", inline: true },
+            { name: "No", value: "0", inline: true },
+          ])
+          .setColor([104, 204, 156]);
+
+        const pollButtons = new ActionRowBuilder().addComponents(
+          new ButtonBuilder()
+            .setLabel("Yes")
+            .setCustomId(`Poll-Yes-${message.id}`)
+            .setStyle(ButtonStyle.Success),
+          new ButtonBuilder()
+            .setLabel("No")
+            .setCustomId(`Poll-No-${message.id}`)
+            .setStyle(ButtonStyle.Danger)
+        );
+
+        await message.channel.send({
+          embeds: [pollEmbed],
+          components: [pollButtons],
+          fetchReply: true,
+        });
+
+        // message.editReply({ components: [pollButtons] });
+
+        message.delete();
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  },
+};

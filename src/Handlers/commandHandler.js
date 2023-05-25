@@ -37,6 +37,7 @@ async function loadCommands(client) {
         Status: "🛑",
         Error: error.toString(),
       });
+      console.log(error);
     }
   }
 

@@ -14,13 +14,22 @@
     <a><img src="https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23fff" alt="Javascript"></a>
 </p>
 
-# ToDo list
+# TODO
 
-- [X] Add Command Handler
-- [X] Add first Command (like Ping)  
-- [ ] Add Events (like guildMemberAdd, guildMemberRemove)
+- [x] Added ENV File
+- [x] Added Command Handler
+- [x] Added Event Handler
+- [x] Added FileLoader
+- [x] Added Mongoose Connection
+- [x] Added Reload Command
+- [x] AddedPoll Command
+- [x] Added Timeout Command
+- [ ] Add Events
+  - guildMemberAdd (Welcome)
+  - guildMemberLeave (Leave)
 
 > So these are the first things that still need to be done. As already written, this bot should be updated over time so that this is sometime a complete bot that you only have to download and set a few things!
 
 # Feature
+
 **At this time the bot has no features, these will come with time!**
