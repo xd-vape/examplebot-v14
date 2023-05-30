@@ -21,7 +21,7 @@
 - [x] Added FileLoader
 - [x] Added Mongoose Connection
 - [x] Added Reload Command
-- [x] AddedPoll Command
+- [x] Added Poll Command
 - [x] Added Timeout Command
 - [x] Added Giveaway Command
 - [ ] Add Events
