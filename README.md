@@ -23,6 +23,7 @@
 - [x] Added Reload Command
 - [x] AddedPoll Command
 - [x] Added Timeout Command
+- [x] Added Giveaway Command
 - [ ] Add Events
   - guildMemberAdd (Welcome)
   - guildMemberLeave (Leave)
