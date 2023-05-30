@@ -5,6 +5,7 @@ const ConsoleLogger = require("../../Structures/Classes/consoleLogger");
 const logger = new ConsoleLogger();
 
 const mongoose = require("mongoose");
+const manager = require("../../Structures/Classes/giveawayClient");
 
 module.exports = {
   name: "ready",

@@ -106,9 +106,34 @@ module.exports = {
       totalPoints: userData.Infractions.length,
     };
 
-    let replacedText = translation.timeoutSuccessEmbedDesc;
+    let replacedTextDesc = translation.timeoutSuccessEmbedDesc;
+    let replacedTextReasonName = translation.timeoutSuccesFieldReasonName;
+    let replacedTextDurationName = translation.timeoutSuccesFieldDurationName;
+    let replacedTextDurationValue = translation.timeoutSuccesFieldDurationValue;
+    let replacedTextTotalName = translation.timeoutSuccesFieldTotalName;
+    let replacedTextTotalValue = translation.timeoutSuccesFieldTotalValue;
     for (const key in timeoutTextReplaces) {
-      replacedText = replacedText.replace(
+      replacedTextDesc = replacedTextDesc.replace(
+        new RegExp(`\\$\\{${key}\\}`, "g"),
+        timeoutTextReplaces[key]
+      );
+      replacedTextReasonName = replacedTextReasonName.replace(
+        new RegExp(`\\$\\{${key}\\}`, "g"),
+        timeoutTextReplaces[key]
+      );
+      replacedTextDurationName = replacedTextDurationName.replace(
+        new RegExp(`\\$\\{${key}\\}`, "g"),
+        timeoutTextReplaces[key]
+      );
+      replacedTextDurationValue = replacedTextDurationValue.replace(
+        new RegExp(`\\$\\{${key}\\}`, "g"),
+        timeoutTextReplaces[key]
+      );
+      replacedTextTotalName = replacedTextTotalName.replace(
+        new RegExp(`\\$\\{${key}\\}`, "g"),
+        timeoutTextReplaces[key]
+      );
+      replacedTextTotalValue = replacedTextTotalValue.replace(
         new RegExp(`\\$\\{${key}\\}`, "g"),
         timeoutTextReplaces[key]
       );
@@ -120,23 +145,21 @@ module.exports = {
         iconURL: guild.iconURL(),
       })
       .setColor("Gold")
-      .setDescription([replacedText].join("\n"))
+      .setDescription([replacedTextDesc].join("\n"))
       .addFields({
-        name: `${translation.timeoutSuccesFieldReason}`,
+        name: `${replacedTextReasonName}`,
         value: `${reason}`,
         inline: false,
       })
       .addFields(
         {
-          name: `${translation.timeoutSuccesFieldDuration}`,
-          value: `**${ms(ms(duration), {
-            long: true,
-          })}**`,
+          name: `${replacedTextDurationName}`,
+          value: `${replacedTextDurationValue}`,
           inline: true,
         },
         {
-          name: `${translation.timeoutSuccesFieldTotal}`,
-          value: `**${userData.Infractions.length} points**`,
+          name: `${replacedTextTotalName}`,
+          value: `${replacedTextTotalValue}`,
           inline: true,
         }
       );

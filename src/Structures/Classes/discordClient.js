@@ -9,7 +9,13 @@ const { Guilds, GuildMembers, GuildMessages, MessageContent } =
 const { User, Message, GuildMember, ThreadMember } = Partials;
 
 const client = new Client({
-  intents: [Guilds, GuildMembers, GuildMessages, MessageContent],
+  intents: [
+    Guilds,
+    GuildMembers,
+    GuildMessages,
+    MessageContent,
+    "GuildMessageReactions",
+  ],
   partials: [User, Message, GuildMember, ThreadMember],
 });
 
