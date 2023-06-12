@@ -10,9 +10,12 @@ module.exports = {
   async execute(message) {
     if (message.author.bot) return;
 
-    if (message.channel.id === "837695830668083230") {
-      for (const emoji of config.autoReactionEmojis) {
-        message.react(emoji);
+    for (const channelid of config.autoReactionChannel) {
+      if (!channelid) return console.log("no channel");
+      if (message.channel.id === channelid) {
+        for (const emoji of config.autoReactionEmojis) {
+          message.react(emoji);
+        }
       }
     }
   },
