@@ -177,6 +177,7 @@ module.exports = {
                   winners: "Gewinner",
                   endedAt: "Beendet am",
                 },
+                reaction: "✅",
               })
               .then((data) => {
                 infoEmbed
