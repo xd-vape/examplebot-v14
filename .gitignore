@@ -1,3 +1,4 @@
 .env
 node_modules
 giveaways.json
+package-lock.json
